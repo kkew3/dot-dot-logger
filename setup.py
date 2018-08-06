@@ -5,7 +5,7 @@ with open('README.md') as infile:
 
 setuptools.setup(
     name='ddlogger',
-    version='0.9b2',
+    version='0.9b3',
     author='Kaiwen Wu',
     author_email='kps6326@hotmail.com',
     description='Logs progress by printing dots',
