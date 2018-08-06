@@ -5,7 +5,7 @@ with open('README.md') as infile:
 
 setuptools.setup(
     name='ddlogger',
-    version='0.9b3',
+    version='0.9b4',
     author='Kaiwen Wu',
     author_email='kps6326@hotmail.com',
     description='Logs progress by printing dots',
@@ -13,6 +13,9 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     url='https://github.com/kkew3/dot-dot-logger',
     packages=setuptools.find_packages(),
+    install_requires=[
+        'future',
+    ],
     classifiers=(
         'Programming Language :: Python',
         'License :: OSI Approved :: MIT License',
