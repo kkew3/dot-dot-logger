@@ -22,4 +22,16 @@ Suppose in the above example the `a_finite_generator` returns an iterable of len
 	...............................................................................
 	.....................
 
-where each row contains 79 dots. To change the number of dots in a row or the shape of the dots, see `help(ddlogger.DotDotLogger)`.
+where each row contains at most 79 dots. To change the number of dots in a row or the shape of the dots, see `help(ddlogger.DotDotLogger)`.
+
+## Installation
+
+```bash
+pip install ddlogger
+```
+
+or
+
+```bash
+pip3 install ddlogger
+```
