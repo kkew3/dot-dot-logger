@@ -5,16 +5,16 @@ Prints dots to stdout to log the progress of a loop without knowing the total lo
 ## Usage
 
 ```python
-from ddlogger import DotDotLogger
+from ddlogger import ddlogger
 
 def a_finite_generator():
     # ...
     # yield something
 
-dl = DotDotLogger()
-for item in a_finite_generator():
-    # do something that does not contain "print" statement/function
-    dl.update()  # prints a dot
+with ddlogger() as dl:
+    for item in a_finite_generator():
+        # do something that does not contain "print" statement/function
+        dl.update()  # prints a dot
 ```
 
 Suppose in the above example the `a_finite_generator` returns an iterable of length 100, then it produces
